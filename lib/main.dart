@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_playground/money_page.dart';
+import 'money_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,13 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Money',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MoneyPage(),
+      home: MoneyPage(),
     );
   }
 }
